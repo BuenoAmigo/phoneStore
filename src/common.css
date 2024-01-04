@@ -1,0 +1,211 @@
+:root {
+  --white-text-color: #ffffff;
+  --grey-text-color: #9da4bd;
+  --title-black-color: #303030;
+  --text-black-color: #555555;
+  --orange-text-color: #ff6c00;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+/* img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+} */
+button {
+  cursor: pointer;
+  border: 1px solid var(--orange-text-color);
+  border-radius: 25px;
+}
+
+address {
+  font-style: normal;
+}
+
+body {
+  font-family: Raleway, sans-serif;
+  color: var(--title-black-color);
+  /* background-color: var(--wtite-color); */
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 50px;
+  margin-right: 50px;
+  /* outline: 1px solid red; */
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* .card {
+  border: 1px solid #e7e9fc;
+} */
+
+.link {
+  text-decoration: none;
+}
+
+.link:hover,
+.link:focus {
+  /* color: var(--blue-accent-color); */
+}
+
+.button {
+  text-decoration: none;
+}
+
+.button:hover {
+  /* font-family: "Roboto", sans-serif;
+  color: var(--wtite-color);
+  background-color: var(--blue-accent-color); */
+}
+
+.button:focus {
+  /* font-family: "Roboto", sans-serif;
+  color: var(--wtite-color);
+  background-color: var(--blue-accent-color); */
+}
+
+/* HEADER */
+.header-image {
+  background-image: url(./background-image.jpg);
+  margin-top: -20px;
+}
+.header-image::-webkit-scrollbar {
+  width: 0;
+}
+
+.header-list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  background-color: rgba(25, 28, 38, 0.2);
+  list-style: none;
+  font-size: 30px;
+}
+
+.header-list::-webkit-scrollbar {
+  width: 0;
+}
+
+.header-item {
+  padding: 10px 20px;
+  background-color: lightblue;
+  border-radius: 20px;
+}
+
+.header-item a {
+  text-decoration: none;
+  color: black;
+}
+.header-input {
+  width: 75%;
+  height: 30px;
+  margin-left: 20px;
+  margin-top: 30px;
+}
+
+.phones-list {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  margin-left: 20px;
+  list-style: none;
+}
+
+.phones-list li {
+  margin-top: 20px;
+}
+
+.phones-list p {
+  margin: 10px auto;
+}
+
+.button-item {
+  justify-content: center;
+  margin-left: auto;
+  margin-left: 20px;
+  padding: 10px;
+}
+
+.product-info {
+  margin: 10px auto;
+}
+
+.modal-card {
+  width: 800px;
+  padding: 30px;
+  margin: 20px 0;
+  background-color: var(--white-text-color);
+  border-radius: 30px;
+}
+
+.modal-card img,
+h2,
+h3,
+p,
+div {
+  margin-top: 10px;
+}
+
+.js-list {
+  display: flex;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.js-card {
+  width: 500px;
+  height: 550px;
+}
+
+.js-card > img:focus,
+.js-card > img:hover {
+  position: relative;
+  transition-property: width, height;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  width: 420px;
+  height: auto;
+}
