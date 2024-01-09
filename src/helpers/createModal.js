@@ -2,7 +2,7 @@ import * as basicLightbox from 'basiclightbox';
 import 'basiclightbox/dist/basicLightbox.min.css';
 
 function createModal(product) {
-    const instance = basicLightbox.create(`
+  const instance = basicLightbox.create(`
     <div class="modal-card">
   <img src="${product.img}" alt="${product.name}" width="500">
   <h2>${product.name}</h2>
@@ -10,11 +10,13 @@ function createModal(product) {
   <p>${product.description}</p>
   <div>
   <button class="button-item js-favorite">Add to favorite</button>
-    <button class="button-item js-basket">Add to basket</button>
+  </div>
+  <div>
+  <button class="button-item js-basket">Add to basket</button>
 </div>
 </div>
 `);
-    instance.show();
+  instance.show();
 }
 
 export { createModal }

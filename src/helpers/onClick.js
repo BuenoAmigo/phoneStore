@@ -25,7 +25,10 @@ function onClick(evt) {
 
     if (evt.target.classList.contains("js-basket")) {
         const product = findProduct(evt.target);
-        createModal(product);
+        const inBasket = basketArr.some(({ id }) => id === product.id);
+        if (inBasket) {
+            return
+        }
         basketArr.push(product);
         localStorage.setItem(common.KEY_BASKET, JSON.stringify(basketArr));
     }
