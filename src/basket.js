@@ -45,6 +45,6 @@ function removeItem(evt) {
     if (evt.target.classList.contains("js-remove-basket")) {
         const product = findProduct(evt.target);
         localStorage.removeItem(product);
-        // createMarkup(basket, list);
+        createMarkup(basket, list);
     }
 }
